@@ -1,0 +1,153 @@
+/* --------------------------------------------------------
+Style Sheet for MS To Do Clone UI
+
+version: 1.0
+last modified: mm/dd/yy
+author: Deilon Cutamora
+email: dloncutamora@gmail.com
+website: 
+----------------------------------------------------------*/
+/* -----------------------------------------------------------
+CONTENTS:
+0. Default
+1. General
+2. Sidebar Left
+3. Account names & Search button
+------------------------------------------------------------*/
+
+/**********************************
+***********************************
+0. Default
+***********************************
+**********************************/
+body {
+    margin: 0;
+    background: #f1f1f1;
+}
+
+/**********************************
+***********************************
+1. General
+***********************************
+**********************************/
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+/**********************************
+***********************************
+2. Sidebar Left
+***********************************
+**********************************/
+.aside-left {
+    width: 260px;
+    background-color: #FFF;
+}
+
+.title-aside {
+    font-family: 'Segoe UI Regular';
+    font-size: 13px;
+    color: gray;
+    padding: 7px 10px;
+    margin: 0;
+}
+
+
+/**********************************
+***********************************
+3. Account names & Search button
+***********************************
+**********************************/
+.user-top {
+    margin-top: 15px;
+}
+.account {
+    position: relative;
+}
+
+.names {
+    padding: 5px 10px;
+}
+.names:hover {
+    background: #FAFBFC;
+}
+.names div {
+    display: inline-block;
+}
+.names .avatar {
+    font-size: 11px;
+    font-family: 'Segoe UI Regular';
+    padding: 6px;
+    border-radius: 50%;
+    background: #603CBA;
+    color: #FFF;
+    margin-right: 5px;
+}
+.names .account-details {
+    vertical-align: middle;
+}
+.names .account-details p {
+    margin: 0;
+}
+.names .account-details .full-name {
+    font-size: 14px;
+    font-family: 'Segoe UI Regular';
+}
+.names .account-details .email {
+    font-size: 11px;
+    font-family: 'Segoe UI Regular';
+    color: gray;
+}
+.names .account-details .email i {
+    font-size: 9px;
+    font-weight: bold;
+}
+.search-button {
+    position: absolute;
+    top: 0; 
+    right: 0;
+    padding: 12px 14px;
+    background: #FFF;
+}
+.search-button:hover {
+    background: #FAFBFC;
+}
+.search-button i {
+    color: gray;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/**********************************
+***********************************
+4. General navigations i.e My Day, Important ..
+***********************************
+**********************************/
+.gen-list {
+    padding: 13px 17px;
+}
+.gen-list:hover {
+    background: #F4F5F5;
+}
+.gen-list i,
+.gen-list p {
+    display: inline;
+}
+.gen-list i {
+    vertical-align: middle;
+    margin-right: 11px;
+    font-size: 16px;
+}
+.gen-list p {
+    font-family: 'Segoe UI Regular';
+    font-size: 14px;
+}
+.gen-list .ms-Icon--FavoriteStar {
+    color: #d13438;
+}
+.gen-list .ms-Icon--Contact {
+    color: #498205;
+}
