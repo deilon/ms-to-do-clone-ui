@@ -44,6 +44,7 @@ body {
 **********************************/
 .aside-left {
     width: 260px;
+    height: 100vh;
     background-color: #FFF;
 }
 
@@ -137,8 +138,8 @@ body {
     display: inline;
 }
 .gen-list i {
-    vertical-align: middle;
-    margin-right: 11px;
+    vertical-align: -2px;
+    margin-right: 9px;
     font-size: 16px;
 }
 .gen-list p {
@@ -150,4 +151,60 @@ body {
 }
 .gen-list .ms-Icon--Contact {
     color: #498205;
+}
+.gen-list .gen-list-count {
+    float: right;
+}
+
+.separator {
+    padding: 10px 15px;
+}
+.separator div {
+    height: 1px;
+    background: #f1f1f1;
+}
+
+.task-nav {
+    padding: 10px 17px 10px 5px;
+}
+.task-nav:hover {
+    background: #F4F5F5;
+}
+.task-nav-border {
+    padding: 0px 0 3px 10px;
+    border-left: 2px solid transparent;
+}
+.active-border {
+    border-left: 2px solid #797673;
+}
+.active-border p,
+.active-border .task-nav-count {
+    color: #8a8886 !important;
+    font-family: 'Segoe UI Bold' !important;
+}
+.task-nav-border i,
+.task-nav-border p {
+    display: inline;
+    vertical-align: middle;
+}
+.task-nav-border i {
+    color: #797673;
+    font-size: 16px;
+}
+.task-nav-border p {
+    font-family: 'Segoe UI Regular';
+    font-size: 14px;
+    margin-left: 10px;
+}
+.task-nav-border p i {
+    margin-left: 5px;
+}
+.task-nav-count {
+    float: right;
+    font-family: 'Segoe UI Regular';
+    font-size: 14px;
+}
+.new-list {
+    color: #8a8886 !important;
+    font-family: 'Segoe UI Regular' !important;
 }
