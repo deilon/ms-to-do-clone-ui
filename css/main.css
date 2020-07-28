@@ -43,7 +43,7 @@ body {
 ***********************************
 **********************************/
 .aside-left {
-    width: 260px;
+    /* width: 260px; */
     height: 100vh;
     background-color: #FFF;
 }
@@ -207,4 +207,88 @@ body {
 .new-list {
     color: #8a8886 !important;
     font-family: 'Segoe UI Regular' !important;
+}
+
+/**********************************
+***********************************
+5. Main window
+***********************************
+**********************************/
+main {
+    width: 100%;
+    height: 100vh;
+    /* padding: 0; */
+    /* overflow-y: hidden !important;
+    overflow-x: auto; */
+    flex-grow: 1;
+    flex-basis: 0%;
+    background-image: url('../img/mountain-field.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+.main-top {
+    background: rgba(0, 128, 0, 0.3);
+    padding: 25px 25px 5px 25px;
+}
+.main-top h1 {
+    font-family: 'Segoe UI Regular';
+    font-size: 27px;
+    color: #FFF;
+}
+
+.main-list {
+    padding: 5px 25px 0 25px;
+}
+.task {
+    padding: 5px 5px;
+    background: #FFF;
+    border-radius: 5px;
+    margin: 3px 0;
+}
+.task-check {
+    padding: 10px 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.task-check i {
+    color: gray;
+    font-size: 23px;
+    vertical-align: middle;
+}
+
+.task-description {
+    margin: 0;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.task-description p {
+    margin: 0;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.task-description ul {
+    list-style: disc;
+    font-size: 12px;
+    color: gray;
+    margin: 0 !important;
+    padding: 0;
+    padding-top: 3px;
+    overflow: hidden;
+}
+.task-description ul li {
+    display: inline;
+    text-align: left;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.task-description ul li .ms-Icon--RadioBullet {
+    font-size: 8px;
+}
+.task-pre-icon {
+    vertical-align: baseline;
+    font-size: 10px;
+    font-weight: bold;
 }

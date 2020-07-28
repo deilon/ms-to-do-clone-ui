@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="ms-Fabric" dir="ltr">
+<body class="ms-Fabric" dir="ltr" style="display: flex;">
 
-<aside class="aside-left">
+<aside class="aside-left" style="flex-basis: 260px">
     <div class="container">
         
         <p class="title-aside">Microsoft To Do</p>
@@ -95,7 +95,41 @@
     </div>
 </aside>
 
-<main></main>
+<main>
+    <section class="main-top">
+        <h1>Angular</h1>
+    </section>
+    <section class="main-list">
+        <div class="task clearfix">
+            <div class="task-check">
+                <!-- <i class="ms-Icon ms-Icon--Completed " aria-hidden="true"></i> -->
+                <i class="ms-Icon ms-Icon--CircleRing" aria-hidden="true"></i>
+            </div>
+            <div class="task-description">
+                <p>HTTPClient</p> 
+
+                <ul>
+                    <li><i class="ms-Icon ms-Icon--Sunny task-pre-icon" aria-hidden="true"></i> My Day</li>
+                    <li><i class="ms-Icon ms-Icon--RadioBullet" aria-hidden="true"></i> 0 of 2</li>
+                    <li><i class="ms-Icon ms-Icon--RadioBullet" aria-hidden="true"></i> <i class="ms-Icon ms-Icon--Event task-pre-icon" aria-hidden="true"></i> Fri, Aug 7 &nbsp;<i class="ms-Icon ms-Icon--SyncOccurence task-pre-icon" aria-hidden="true"></i></li>
+                    <li><i class="ms-Icon ms-Icon--RadioBullet" aria-hidden="true"></i> <i class="ms-Icon ms-Icon--Ringer task-pre-icon" aria-hidden="true"></i> Sun, Aug 2 </li>
+                    <li><i class="ms-Icon ms-Icon--Attach" aria-hidden="true"></i></li>
+                    <li><i class="ms-Icon ms-Icon--QuickNote" aria-hidden="true"></i></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="task clearfix">
+            <div class="task-check">
+                <i class="ms-Icon ms-Icon--Completed " aria-hidden="true"></i>
+                <!-- <i class="ms-Icon ms-Icon--CircleRing" aria-hidden="true"></i> -->
+            </div>
+            <div class="task-description">RXJS
+                <!-- <span>0 of 2 | Fri, Aug 7 | Sun, Jul 26</span> -->
+            </div>
+        </div>
+    </section>
+</main>
 
 </body>
 </html>
