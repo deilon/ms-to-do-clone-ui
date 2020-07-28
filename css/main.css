@@ -226,16 +226,38 @@ main {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    
 }
 .main-top {
-    background: rgba(0, 128, 0, 0.3);
-    padding: 25px 25px 5px 25px;
+    padding: 50px 25px 25px 25px;
 }
-.main-top h1 {
+.main-top-content {
+    position: relative;
+}
+.main-top-content h1 {
     font-family: 'Segoe UI Regular';
-    font-size: 27px;
+    font-size: 26px;
     color: #FFF;
+    margin: 0;
+}
+.main-top-right {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.main-top-right span {
+    display: inline-block;
+    margin-left: 10px;
+}
+.main-top-right span i {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+}
+.main-top-right span i:hover {
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .main-list {
