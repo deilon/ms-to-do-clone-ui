@@ -313,3 +313,27 @@ main {
     font-size: 10px;
     font-weight: bold;
 }
+
+.completed {
+    display: inline-block;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.completed:hover {
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+.completed i {
+    font-size: 13px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.completed-task span {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #69797e;
+}
