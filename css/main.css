@@ -314,7 +314,7 @@ main {
     font-weight: bold;
 }
 
-.completed {
+.completed-toggle {
     display: inline-block;
     color: white;
     background: rgba(0, 0, 0, 0.5);
@@ -323,11 +323,11 @@ main {
     border-radius: 4px;
     margin: 10px 0;
 }
-.completed:hover {
+.completed-toggle:hover {
     background: rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
-.completed i {
+.completed-toggle i {
     font-size: 13px;
     margin-right: 5px;
     vertical-align: middle;
