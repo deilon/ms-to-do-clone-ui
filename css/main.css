@@ -285,9 +285,9 @@ main {
     font-size: 15px;
     vertical-align: middle;
 }
-.task-description p {
+.task-title {
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
     vertical-align: middle;
 }
 .task-description ul {
