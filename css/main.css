@@ -319,8 +319,8 @@ main {
     color: white;
     background: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
-    font-size: 16px;
-    border-radius: 3px;
+    font-size: 15px;
+    border-radius: 4px;
     margin: 10px 0;
 }
 .completed:hover {
@@ -336,4 +336,35 @@ main {
     font-size: 14px;
     text-decoration: line-through;
     color: #69797e;
+}
+
+/* Task input form */
+.task-input-wrap {
+    padding: 5px 25px 30px 25px;
+}
+.task-input-content {
+    padding: 8px 8px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    margin: 3px 0;
+    backdrop-filter: blur(10px);
+    color: #f3f2f1;
+}
+.task-input-left-icon {
+    padding: 10px 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.task-input-left-icon i {
+    font-size: 16px;
+    vertical-align: middle;
+}
+.task-input-form {
+    margin: 0;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.task-title-form {
+    font-size: 15px;
 }
