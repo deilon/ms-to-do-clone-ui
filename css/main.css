@@ -263,15 +263,16 @@ main {
     padding: 5px 25px 0 25px;
 }
 .task {
+    display: flex;
+    align-items: center;
     padding: 5px 5px;
     background: #FFF;
     border-radius: 5px;
     margin: 3px 0;
+    height: 45px !important;
 }
 .task-check {
     padding: 10px 10px;
-    display: inline-block;
-    vertical-align: middle;
 }
 .task-check i {
     color: gray;
@@ -280,15 +281,13 @@ main {
 }
 
 .task-description {
+    width: 100%;
     margin: 0;
-    display: inline-block;
     font-size: 15px;
-    vertical-align: middle;
 }
 .task-title {
     margin: 0;
     font-size: 14px;
-    vertical-align: middle;
 }
 .task-description ul {
     list-style: disc;
@@ -312,6 +311,13 @@ main {
     vertical-align: baseline;
     font-size: 10px;
     font-weight: bold;
+}
+.task-star {
+    color: gray;
+    padding: 10px 15px;
+}
+.task-star i {
+    font-size: 17px;
 }
 
 .completed-toggle {
