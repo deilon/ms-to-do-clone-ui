@@ -9,15 +9,13 @@ website:
 ----------------------------------------------------------*/
 /* -----------------------------------------------------------
 CONTENTS:
-0. Default
-1. General
-2. Left Sidebar Pane
-3. Main Window
+1. Left Sidebar Pane
+2. Main Window
 ------------------------------------------------------------*/
 
 /**********************************
 ***********************************
-0. Default
+General
 ***********************************
 **********************************/
 body {
@@ -25,16 +23,6 @@ body {
     background: #f1f1f1;
 }
 
-
-
-
-
-
-/**********************************
-***********************************
-1. General
-***********************************
-**********************************/
 .clearfix::after {
     content: '';
     clear: both;
@@ -47,7 +35,7 @@ body {
 
 /**********************************
 ***********************************
-2. Left Sidebar Pane
+1. Left Sidebar Pane
 ***********************************
 **********************************/
 .aside-left {
@@ -216,7 +204,7 @@ body {
 
 /**********************************
 ***********************************
-5. Main window
+2. Main window
 ***********************************
 **********************************/
 main {
@@ -231,6 +219,8 @@ main {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+/*** main-top ***/
 .main-top {
     padding: 50px 25px 25px 25px;
 }
@@ -264,6 +254,7 @@ main {
     background: rgba(0, 0, 0, 0.7);
 }
 
+/*** main-list ***/
 .main-list {
     padding: 5px 25px 0 25px;
 }
@@ -284,7 +275,6 @@ main {
     font-size: 23px;
     vertical-align: middle;
 }
-
 .task-description {
     width: 100%;
     margin: 0;
@@ -344,22 +334,22 @@ main {
     vertical-align: middle;
 }
 .completed-task span {
+    color: #69797e;
     font-size: 14px;
     text-decoration: line-through;
-    color: #69797e;
 }
 
-/* Task input form */
+/*** Task input form ***/
 .task-input-wrap {
     padding: 5px 25px 30px 25px;
 }
 .task-input-content {
+    color: #f3f2f1;
     padding: 8px 8px;
+    margin: 3px 0;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-    margin: 3px 0;
     backdrop-filter: blur(10px);
-    color: #f3f2f1;
 }
 .task-input-left-icon {
     padding: 10px 10px;
@@ -371,9 +361,9 @@ main {
     vertical-align: middle;
 }
 .task-input-form {
+    font-size: 15px;
     margin: 0;
     display: inline-block;
-    font-size: 15px;
     vertical-align: middle;
 }
 .task-title-form {
