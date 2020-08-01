@@ -11,8 +11,8 @@ website:
 CONTENTS:
 0. Default
 1. General
-2. Sidebar Left
-3. Account names & Search button
+2. Left Sidebar Pane
+3. Main Window
 ------------------------------------------------------------*/
 
 /**********************************
@@ -24,6 +24,11 @@ body {
     margin: 0;
     background: #f1f1f1;
 }
+
+
+
+
+
 
 /**********************************
 ***********************************
@@ -37,13 +42,16 @@ body {
 }
 
 
+
+
+
 /**********************************
 ***********************************
-2. Sidebar Left
+2. Left Sidebar Pane
 ***********************************
 **********************************/
 .aside-left {
-    /* width: 260px; */
+    flex-basis: 260px;
     height: 100vh;
     background-color: #FFF;
 }
@@ -56,12 +64,7 @@ body {
     margin: 0;
 }
 
-
-/**********************************
-***********************************
-3. Account names & Search button
-***********************************
-**********************************/
+/*** user-top ***/
 .user-top {
     margin-top: 15px;
 }
@@ -122,11 +125,7 @@ body {
     vertical-align: middle;
 }
 
-/**********************************
-***********************************
-4. General navigations i.e My Day, Important ..
-***********************************
-**********************************/
+/*** nav-collections ***/
 .gen-list {
     padding: 13px 17px;
 }
@@ -208,6 +207,12 @@ body {
     color: #8a8886 !important;
     font-family: 'Segoe UI Regular' !important;
 }
+
+
+
+
+
+
 
 /**********************************
 ***********************************
