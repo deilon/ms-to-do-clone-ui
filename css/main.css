@@ -400,19 +400,48 @@ main {
 ***********************************
 **********************************/
 .aside-right {
-    flex-basis: 350px;
+    flex-basis: 360px;
     min-height: 100vh;
 }
 
 /* Main task and steps */
 .right-task {
     background: #fff;
+    padding: 10px;
 }
+.right-task-title {
+    display: flex;
+    flex-flow: row;
+    padding: 5px;
+    margin-top: 43px;
+}
+.right-task-title i:nth-child(1) {
+    font-size: 23px;
+    vertical-align: middle;
+    color: gray;
+}
+.right-task-title i:nth-child(3) {
+    font-size: 17px;
+    vertical-align: middle;
+    color: gray;
+    margin-top: 2px;
+}
+.right-task-title h1 {
+    font-family: 'Segoe UI Regular';
+    font-size: 18px;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: -2px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
 
 /* Manage Task */
 .manage-task {
     background: #f5f5f5;
 }
+
 
 /* Detail bottom */
 .detail-bottom {
