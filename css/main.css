@@ -11,6 +11,7 @@ website:
 CONTENTS:
 1. Left Sidebar Pane
 2. Main Window
+1. Right Sidebar Pane
 ------------------------------------------------------------*/
 
 /**********************************
@@ -388,4 +389,33 @@ main {
 }
 .task-title-form {
     font-size: 15px;
+}
+
+
+
+
+/**********************************
+***********************************
+3. Right sidebar pane
+***********************************
+**********************************/
+.aside-right {
+    flex-basis: 350px;
+    min-height: 100vh;
+}
+
+/* Main task and steps */
+.right-task {
+    background: #fff;
+}
+
+/* Manage Task */
+.manage-task {
+    background: #f5f5f5;
+}
+
+/* Detail bottom */
+.detail-bottom {
+    background: #fff;
+    border-top: 1px solid #f1f1f1;
 }
