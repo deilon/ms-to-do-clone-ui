@@ -209,6 +209,8 @@ body {
 ***********************************
 **********************************/
 main {
+    display: flex;
+    flex-flow: column;
     height: 100vh;
     padding: 0;
     flex-grow: 1;
@@ -231,6 +233,7 @@ main {
     width: 100%;
     box-sizing: border-box;
     padding: 50px 25px 25px 25px;
+    z-index: 10;
 }
 .main-top-content {
     position: relative;
@@ -266,6 +269,7 @@ main {
 .main-list {
     z-index: 5;
     padding: 5px 25px 0 25px;
+    flex: 1 1 auto;
 }
 .task {
     display: flex;
