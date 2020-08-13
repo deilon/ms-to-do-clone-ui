@@ -54,7 +54,7 @@ body {
     margin: 0;
 }
 
-/*** user-top ***/
+/************ user-top ************/
 .user-top {
     margin-top: 15px;
 }
@@ -115,7 +115,7 @@ body {
     vertical-align: middle;
 }
 
-/*** nav-collections ***/
+/************ nav-collections ************/
 .gen-list {
     padding: 13px 17px;
 }
@@ -225,7 +225,7 @@ main {
     overflow: auto;
 }
 
-/*** main-top ***/
+/************ Main top ************/
 .main-top {
     background: inherit;
     background-attachment: fixed;
@@ -266,7 +266,7 @@ main {
     background: rgba(0, 0, 0, 0.7);
 }
 
-/*** main-list ***/
+/************ Main list ************/
 .main-list {
     z-index: 5;
     padding: 5px 25px 0 25px;
@@ -353,7 +353,7 @@ main {
     text-decoration: line-through;
 }
 
-/*** Task input form ***/
+/************ Task input form ************/
 .task-input-wrap {
     background: inherit;
     background-attachment: fixed;
@@ -404,7 +404,7 @@ main {
     min-height: 100vh;
 }
 
-/* Main task and steps */
+/************ Main task and steps ************/
 .right-task {
     background: #fff;
     padding-top: 53px;
@@ -495,13 +495,13 @@ main {
 
 
 
-/* Manage Task */
+/************ Manage Task ************/
 .manage-task {
     background: #f5f5f5;
 }
 
 
-/* Detail bottom */
+/************ Detail bottom ************/
 .detail-bottom {
     background: #fff;
     border-top: 1px solid #f1f1f1;
