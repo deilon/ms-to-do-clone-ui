@@ -411,6 +411,7 @@ main {
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
+    border-bottom: 1px solid #e1dfdd;
 }
 .right-task-title {
     display: flex;
