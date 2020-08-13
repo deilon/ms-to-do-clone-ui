@@ -407,13 +407,15 @@ main {
 /* Main task and steps */
 .right-task {
     background: #fff;
-    padding: 10px;
+    padding-top: 53px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .right-task-title {
     display: flex;
     flex-flow: row;
-    padding: 5px;
-    margin-top: 43px;
+    padding: 5px 8px;
 }
 .right-task-title i:nth-child(1) {
     font-size: 23px;
@@ -442,8 +444,8 @@ main {
 .step {
     display: flex;
     align-items: center;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 11px;
+    padding-right: 11px;
 }
 .step:hover {
     background: #FAFBFC;
@@ -478,8 +480,8 @@ main {
 .next-step-input {
     display: flex;
     align-items: center;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 11px;
+    padding-right: 11px;
     color: #0078d4;
 }
 .next-step-input .step-title {
