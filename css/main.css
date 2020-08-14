@@ -520,6 +520,59 @@ main {
 /************ Manage Task ************/
 .manage-task {
     background: #f5f5f5;
+    padding: 10px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+.manage {
+    display: flex;
+    align-items: center;
+    color: #797775;
+    background: #FFF;
+    border: 1px solid #edebe9;
+    padding-left: 15px;
+}
+.manage > i {
+    font-size: 17px;
+}
+.manage-title {
+    position: relative;
+    flex-grow: 1;
+    font-family: 'Segoe UI Regular';
+    font-size: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 15px;
+}
+.title-placeholder {
+    flex-grow: 1;
+    flex-basis: auto;
+}
+.delete-manage {
+    color: #797775;
+    height: 100%;
+    width: 45px;
+    font-size: 16px;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.delete-manage:hover {
+    background: #FAFBFC;
+}
+
+
+.group-manage {
+    border: 1px solid #edebe9;
+}
+.group-manage .manage {
+    border: none;
+}
+.group-manage .manage:not(:last-child) .manage-title {
+    border-bottom: 1px solid #edebe9;
 }
 
 
