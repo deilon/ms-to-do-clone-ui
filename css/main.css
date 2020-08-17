@@ -527,6 +527,12 @@ main {
 .mb-8 {
     margin-bottom: 8px;
 }
+.manage-container {
+    position: relative;
+}
+.manage > i {
+    font-size: 17px;
+}
 .manage {
     display: flex;
     align-items: center;
@@ -535,11 +541,10 @@ main {
     border: 1px solid #edebe9;
     padding-left: 15px;
 }
-.manage > i {
-    font-size: 17px;
+.manage:hover {
+    background: #FAFBFC;
 }
 .manage-title {
-    position: relative;
     flex-grow: 1;
     font-family: 'Segoe UI Regular';
     font-size: 16px;
@@ -553,9 +558,13 @@ main {
 }
 .delete-manage {
     color: #797775;
+    background: #fff;
     height: 100%;
     width: 45px;
     font-size: 16px;
+    border-top: 1px solid #edebe9;
+    border-right: 1px solid #edebe9;
+    border-bottom: 1px solid #edebe9;
     border-radius: 0;
     position: absolute;
     top: 0;
@@ -563,16 +572,21 @@ main {
 }
 .delete-manage:hover {
     background: #FAFBFC;
+    border-top: 1px solid #edebe9;
+    border-right: 1px solid #edebe9;
+    border-bottom: 1px solid #edebe9;
 }
 
 
 .group-manage {
     border: 1px solid #edebe9;
 }
-.group-manage .manage {
+.group-manage .manage,
+.group-manage .delete-manage {
     border: none;
 }
-.group-manage .manage:not(:last-child) .manage-title {
+.group-manage .manage-container:not(:last-child) .delete-manage, 
+.group-manage .manage-container:not(:last-child) .manage-title {
     border-bottom: 1px solid #edebe9;
 }
 
