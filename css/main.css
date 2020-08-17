@@ -585,6 +585,26 @@ main {
 
 /************ Detail bottom ************/
 .detail-bottom {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    color: gray;
     background: #fff;
     border-top: 1px solid #f1f1f1;
+}
+
+.detail-bottom-title {
+    flex-grow: 1;
+    text-align: center;
+    padding: 7px 5px;
+}
+.detail-bottom-icon {
+    font-size: 18px;
+    padding: 10px 12px;
+}
+.detail-bottom-icon:hover {
+    background: #FAFBFC;
+}
+.detail-bottom-icon i {
+    vertical-align: middle;
 }
