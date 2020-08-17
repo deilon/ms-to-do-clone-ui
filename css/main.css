@@ -314,7 +314,8 @@ main {
 .task-description {
     width: 100%;
     margin: 0;
-    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .task-title {
     margin: 0;
@@ -387,6 +388,8 @@ main {
     z-index: 10;
 }
 .task-input-content {
+    display: flex;
+    align-items: center;
     color: #f3f2f1;
     padding: 8px 8px;
     margin: 3px 0;
@@ -397,7 +400,6 @@ main {
 .task-input-left-icon {
     padding: 10px 10px;
     display: inline-block;
-    vertical-align: middle;
 }
 .task-input-left-icon i {
     font-size: 16px;
@@ -406,8 +408,8 @@ main {
 .task-input-form {
     font-size: 15px;
     margin: 0;
-    display: inline-block;
-    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .task-title-form {
     font-size: 15px;
