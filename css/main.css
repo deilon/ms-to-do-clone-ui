@@ -244,7 +244,8 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /************ Main top ************/
