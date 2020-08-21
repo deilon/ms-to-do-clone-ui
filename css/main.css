@@ -295,22 +295,21 @@ main {
     position: relative;
 }
 #customize-pop {
+    display: none;
     position: absolute;
     top: -100%;
     right: 120%;
     width: 290px;
-    /* width: 400px; */
     margin-top: 5px;
     background: #FFF;
     border: 1px solid #FFF;
     border-radius: 4px;
-    overflow-x: auto;
-    overflow-x: hidden;
     -webkit-box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
     -moz-box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
     box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
 }
 .customize-list {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 13px 15px; 
@@ -334,7 +333,6 @@ main {
 }
 #theme {
     padding: 10px 0px;
-    /* background: #3F8C7B; */
 }
 #theme p {
     margin: 0 13px;
@@ -342,7 +340,6 @@ main {
 .theme-list {
     display: flex;
     flex-wrap: wrap;
-    /* background: #C0D8C5; */
     margin: 5px 10px 0px 10px;
 }
 .theme-border {
@@ -381,6 +378,29 @@ main {
     background-image: url('../img/mountain-field.jpg');
     background-size: cover;
     background-position: center center;
+}
+
+.sort-by-pop {
+    position: absolute;
+    top: 0;
+    right: 99%;
+    width: 250px;
+    background: #FFF;
+    border: 1px solid #FFF;
+    box-sizing: border-box;;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
+    -moz-box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
+    box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
+}
+.sort-list {
+    display: flex;
+    align-items: center;
+    padding: 13px 15px;
+}
+.sort-list:hover {
+    background: #F5F6F7;
 }
 
 
