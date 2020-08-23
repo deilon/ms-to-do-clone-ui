@@ -418,6 +418,12 @@ main {
     border-radius: 5px;
     margin: 3px 0;
 }
+.task:hover {
+    background: #F5F5F5;
+}
+.active-task {
+    background: #F5F7F9;
+}
 .task-check {
     padding: 10px 15px 10px 10px;
 }
