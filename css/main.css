@@ -417,7 +417,6 @@ main {
     background: #FFF;
     border-radius: 5px;
     margin: 3px 0;
-    height: 45px !important;
 }
 .task-check {
     padding: 10px 15px 10px 10px;
@@ -430,11 +429,11 @@ main {
 .task-description {
     width: 100%;
     margin: 0;
-    white-space: nowrap;
     overflow: hidden;
 }
 .task-title {
     margin: 0;
+    word-wrap: break-word;
     font-size: 14px;
 }
 .task-description ul {
@@ -445,6 +444,7 @@ main {
     padding: 0;
     padding-top: 3px;
     overflow: hidden;
+    white-space: nowrap;
 }
 .task-description ul li {
     display: inline;
