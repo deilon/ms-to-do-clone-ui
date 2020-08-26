@@ -221,15 +221,22 @@ main {
     top: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 50px 25px 25px 25px;
+    padding: 50px 25px 20px 25px;
     z-index: 15;
 }
+.main-top-hb {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFF;
+}
+
 .main-top-content {
     position: relative;
 }
 .main-top-content h1 {
     font-family: 'Segoe UI Regular';
-    font-size: 26px;
+    font-size: 27px;
     color: #FFF;
     margin: 0;
 }
@@ -722,6 +729,7 @@ main {
 **********************************/
 
 
+
 /************ Breakpoints left ************/
 @media screen and (min-width: 776px) {
     .aside-left { display: flex; }   /* show it on larger screens */
@@ -730,6 +738,16 @@ main {
     .aside-left { display: none; }   /* hide it elsewhere */
 }
 
+@media screen and (min-width: 0px) and (max-width: 775px) {
+    /* Few additions/adjustments in the main window */
+    .main-top {
+        padding-top: 25px !important;
+        padding-bottom: 10px !important;
+    }
+    .main-top-hb {
+        display: block;
+    }
+}
 
 
 /************ Breakpoints right ************/
