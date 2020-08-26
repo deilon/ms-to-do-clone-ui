@@ -65,9 +65,12 @@ button {
 ***********************************
 **********************************/
 .aside-left {
+    display: flex;
+    flex-flow: column;
     flex-basis: 260px;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #FFF;
+    overflow: hidden;
 }
 
 .title-aside {
@@ -140,33 +143,37 @@ button {
 }
 
 /************ nav-collections ************/
-.gen-list {
-    padding: 13px 17px;
+.nav-collections {
+    overflow-y: auto;
 }
-.gen-list:hover {
+.navs {
+    padding: 10px 17px 10px 5px;
+}
+.navs:hover {
     background: #F4F5F5;
 }
-.gen-list i,
-.gen-list p {
-    display: inline;
+.navs-active-border {
+    background: #F8F9FA;
 }
-.gen-list i {
-    vertical-align: -2px;
-    margin-right: 9px;
+.navs-active-border > .navs-border {
+    border-left: 2px solid gray !important; 
+    font-family: 'Segoe UI Bold' !important;
+}
+.navs-border {
+    display: flex;
+    align-items: center;
+    border-left: 2px solid transparent;
+    padding: 2px 0px;
+}
+.navs-border i {
     font-size: 16px;
+    padding-left: 10px;
+    padding-right: 15px;
 }
-.gen-list p {
-    font-family: 'Segoe UI Regular';
+.navs-border p {
+    flex-grow: 1;
+    margin: 0;
     font-size: 14px;
-}
-.gen-list .ms-Icon--FavoriteStar {
-    color: #d13438;
-}
-.gen-list .ms-Icon--Contact {
-    color: #498205;
-}
-.gen-list .gen-list-count {
-    float: right;
 }
 
 .separator {
@@ -175,51 +182,6 @@ button {
 .separator div {
     height: 1px;
     background: #f1f1f1;
-}
-
-.task-nav {
-    padding: 10px 17px 10px 5px;
-}
-.task-nav:hover {
-    background: #F4F5F5;
-}
-.task-nav-border {
-    padding: 0px 0 3px 10px;
-    border-left: 2px solid transparent;
-}
-.active-border {
-    border-left: 2px solid #797673;
-}
-.active-border p,
-.active-border .task-nav-count {
-    color: #8a8886 !important;
-    font-family: 'Segoe UI Bold' !important;
-}
-.task-nav-border i,
-.task-nav-border p {
-    display: inline;
-    vertical-align: middle;
-}
-.task-nav-border i {
-    color: #797673;
-    font-size: 16px;
-}
-.task-nav-border p {
-    font-family: 'Segoe UI Regular';
-    font-size: 14px;
-    margin-left: 10px;
-}
-.task-nav-border p i {
-    margin-left: 5px;
-}
-.task-nav-count {
-    float: right;
-    font-family: 'Segoe UI Regular';
-    font-size: 14px;
-}
-.new-list {
-    color: #8a8886 !important;
-    font-family: 'Segoe UI Regular' !important;
 }
 
 
