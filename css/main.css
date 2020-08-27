@@ -12,7 +12,6 @@ CONTENTS:
 1. Left Sidebar Pane
 2. Main Window
 3. Right Sidebar Pane
-4. Breakpoints
 ------------------------------------------------------------*/
 
 /**********************************
@@ -189,6 +188,40 @@ button {
     background: #f1f1f1;
 }
 
+@media screen and (min-width: 776px) {
+    /* Show on larger screens */
+    .aside-left-overlay { 
+        display: flex; 
+        z-index: 30; 
+    }  
+}
+@media screen and (min-width: 0px) and (max-width: 775px) {
+    /* toggle on smaller screens */
+    .aside-left-overlay { 
+        /* display: flex;  */
+        display: none;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    .aside-left-content {
+        flex-basis: 260px;
+    }   
+}
+
+@media screen and (min-width: 0px) and (max-width: 775px) {
+    /* Few additions/adjustments in the main window */
+    .main-top {
+        padding-top: 25px !important;
+        padding-bottom: 10px !important;
+    }
+    .main-top-hb {
+        display: block !important;
+    }
+}
 
 
 
@@ -728,66 +761,18 @@ main {
     vertical-align: middle;
 }
 
-
-
-/**********************************
-***********************************
-4. Breakpoints
-***********************************
-**********************************/
-
-
-
-/************ Breakpoints left ************/
-@media screen and (min-width: 776px) {
-    /* Show on larger screens */
-    .aside-left-overlay { 
-        display: flex; 
-        z-index: 30; 
-    }  
-}
-@media screen and (min-width: 0px) and (max-width: 775px) {
-    /* toggle on smaller screens */
-    .aside-left-overlay { 
-        /* display: flex;  */
-        display: none;
-        width: 100%;
-        background-color:rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 20;
-    }
-    .aside-left-content {
-        flex-basis: 260px;
-    }   
-}
-
-@media screen and (min-width: 0px) and (max-width: 775px) {
-    /* Few additions/adjustments in the main window */
-    .main-top {
-        padding-top: 25px !important;
-        padding-bottom: 10px !important;
-    }
-    .main-top-hb {
-        display: block;
-    }
-}
-
-
-/************ Breakpoints right ************/
 @media screen and (min-width: 920px) {
     /* Show on larger screens */
     .aside-right-overlay { 
-        display: flex; 
-        /* display: none; */
+        /* display: flex;  */
+        display: none;
     }
 }
 @media screen and (min-width: 0px) and (max-width: 919px) { 
     /* Toggle on smaller screens */
     .aside-right-overlay {
-        /* display: none; */
-        display: flex;
+        display: none;
+        /* display: flex; */
         flex-flow: row-reverse;
         width: 100%;
         background-color:rgba(0, 0, 0, 0.5);
