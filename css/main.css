@@ -65,10 +65,14 @@ button {
 1. Left Sidebar Pane
 ***********************************
 **********************************/
-.aside-left {
+.aside-left-overlay {
     display: flex;
-    flex-flow: column;
     flex-basis: 260px;
+}
+.aside-left-content {
+    display: flex;
+    flex-basis: 260px;
+    flex-flow: column;
     height: 100vh;
     background-color: #FFF;
     overflow: hidden;
@@ -732,10 +736,22 @@ main {
 
 /************ Breakpoints left ************/
 @media screen and (min-width: 776px) {
-    .aside-left { display: flex; }   /* show it on larger screens */
+    .aside-left-overlay { display: flex; }   /* show it on larger screens */
 }
 @media screen and (min-width: 0px) and (max-width: 775px) {
-    .aside-left { display: none; }   /* hide it elsewhere */
+    .aside-left-overlay { 
+        display: none;
+        /* display: flex;  */
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    .aside-left-content {
+        flex-basis: 260px;
+    }   
 }
 
 @media screen and (min-width: 0px) and (max-width: 775px) {
