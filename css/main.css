@@ -521,9 +521,13 @@ main {
 3. Right sidebar pane
 ***********************************
 **********************************/
-.aside-right {
+.aside-right-overlay {
     display: flex;
     /* display: none; */
+    flex-basis: 360px;
+}
+.aside-right-content {
+    display: flex;
     flex-flow: column;
     flex-basis: 360px;
     height: 100vh;
@@ -736,12 +740,17 @@ main {
 
 /************ Breakpoints left ************/
 @media screen and (min-width: 776px) {
-    .aside-left-overlay { display: flex; }   /* show it on larger screens */
+    /* Show on larger screens */
+    .aside-left-overlay { 
+        display: flex; 
+        z-index: 30; 
+    }  
 }
 @media screen and (min-width: 0px) and (max-width: 775px) {
+    /* toggle on smaller screens */
     .aside-left-overlay { 
-        display: none;
         /* display: flex;  */
+        display: none;
         width: 100%;
         background-color:rgba(0, 0, 0, 0.5);
         position: absolute;
@@ -767,18 +776,29 @@ main {
 
 
 /************ Breakpoints right ************/
-@media screen and (min-width: 0px) and (max-width: 919px) { 
-    .aside-right {
-        display: flex;
+@media screen and (min-width: 920px) {
+    /* Show on larger screens */
+    .aside-right-overlay { 
+        display: flex; 
         /* display: none; */
-        flex-flow: column;
-        flex-basis: 360px;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 919px) { 
+    /* Toggle on smaller screens */
+    .aside-right-overlay {
+        /* display: none; */
+        display: flex;
+        flex-flow: row-reverse;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.5);
         height: 100vh;
         overflow-y: auto;
 
         position: absolute;
         top: 0; 
-        right: 0;
         z-index: 20;
+    }
+    .aside-right-content {
+        flex-basis: 360px;
     }
 }
