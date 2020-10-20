@@ -12,6 +12,7 @@ CONTENTS:
 1. Left Sidebar Pane
 2. Main Window
 3. Right Sidebar Pane
+4. Modals
 ------------------------------------------------------------*/
 
 /**********************************
@@ -153,7 +154,7 @@ button {
     border-radius: 4px;
     overflow: hidden;
     -webkit-box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
-    -moz-box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
+    -moz-box-shadow: 1px 0px 7px 1px rgba(114, 78, 43, 0.41);
     box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
 }
 .user-drop-list {
@@ -836,4 +837,131 @@ main {
     .aside-right-content {
         flex-basis: 360px;
     }
+}
+
+
+
+/**********************************
+***********************************
+4. Modals
+***********************************
+**********************************/
+.modal {
+    display: none !important;
+    /* position: fixed; */
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.manage-accounts {
+    width: 320px;
+    background: #fff;
+    margin: 15% auto;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
+    -moz-box-shadow: 1px 0px 7px 1px rgba(114, 78, 43, 0.41);
+    box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
+}
+.modal-header {
+    font-family: 'Segoe UI Bold';
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+}
+.manage-account {
+    padding: 15px 15px;
+}
+.manage-account:hover {
+    cursor: default;
+    background: #FAFBFC;
+}
+.manage-account div {
+    display: inline-block;
+    box-sizing: border-box;
+}
+.manage-account .avatar {
+    font-size: 11px;
+    font-family: 'Segoe UI Regular';
+    padding: 6px;
+    border-radius: 50%;
+    background: #603CBA;
+    color: #FFF;
+    margin-right: 20px;
+}
+.manage-account .account-details {
+    vertical-align: middle;
+}
+.manage-account .account-details p {
+    margin: 0;
+}
+.manage-account .account-details .full-name {
+    font-size: 14px;
+    font-family: 'Segoe UI Regular';
+}
+.manage-account .account-details .email {
+    font-size: 11px;
+    font-family: 'Segoe UI Regular';
+    color: gray;
+}
+.manage-account .account-details .email i {
+    font-size: 9px;
+    font-weight: bold;
+}
+.manage-account-signout {
+    float: right;
+}
+.manage-account-signout a {
+    display: block;
+    font-family: 'Segoe UI Regular';
+    background: #DC282B;
+    color: #FFF;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 70px;
+}
+.manage-account-add {
+    box-sizing: border-box;
+}
+
+.manage-account-add {
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding: 17px 20px;
+    text-decoration: none;
+}
+.manage-account-add:hover {
+    cursor: default;
+    background: #FAFBFC;
+}
+.manage-account-add i {
+    margin-right: 20px;
+    font-size: 18px;
+}
+.manage-account-add p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.manage-account-footer {
+    padding: 15px;
+}
+.manage-account-footer button {
+    float: right;
+    color: #000;
+    background: #f1f1f1;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+.manage-account-footer button:hover {
+    border: 1px solid #000;
 }
