@@ -51,7 +51,7 @@ main {
 ***********************************
 **********************************/
 .overlay {
-    display: none;
+    /* display: none; */
     position: fixed;
     z-index: 1000;
     padding-top: 100px; 
@@ -77,6 +77,9 @@ main {
  Welcome Dialog
 ***********************************
 **********************************/
+.welcome-dialog {
+    font-family: 'Segoe UI Regular'
+}
 #popsignin button {
     color: #FFF;
     background: #436AF2;
