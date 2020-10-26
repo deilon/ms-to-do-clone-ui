@@ -5,6 +5,7 @@ body {
 }
 a {
     display: block;
+    font-family: 'Segoe UI Regular';
     width: 250px;
     background: #F1F1F1; 
     color: #000;
@@ -14,6 +15,9 @@ a {
 }
 a:hover {
     cursor: pointer;
+}
+span {
+    font-family: 'Segoe UI Regular';
 }
 
 main {
