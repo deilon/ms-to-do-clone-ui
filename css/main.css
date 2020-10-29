@@ -22,7 +22,7 @@ General
 **********************************/
 body {
     margin: 0;
-    font-family: 'Segoe UI Regular';
+
 }
 
 .clearfix::after {
@@ -215,7 +215,9 @@ button {
 }
 .navs-active-border > .navs-border {
     border-left: 2px solid gray !important; 
-    font-family: 'Segoe UI Bold' !important;
+}
+.navs-active-border .ms-Icon-customBold {
+    font-weight: bold;
 }
 .navs-border {
     display: flex;
@@ -231,7 +233,7 @@ button {
 .navs-border p {
     flex-grow: 1;
     margin: 0;
-    font-size: 14px;
+    /* font-size: 14px; */
 }
 
 .separator {
