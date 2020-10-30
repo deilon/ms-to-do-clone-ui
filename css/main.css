@@ -585,6 +585,7 @@ main {
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
+    margin-left: 10px;
 }
 .task-title-form {
     font-size: 15px;
