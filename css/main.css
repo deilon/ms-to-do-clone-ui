@@ -611,8 +611,8 @@ main {
 ***********************************
 **********************************/
 .aside-right-overlay {
-    display: flex;
-    /* display: none; */
+    /* display: flex; */
+    display: none;
     flex-basis: 360px;
 }
 .aside-right-content {
@@ -820,15 +820,15 @@ main {
 @media screen and (min-width: 920px) {
     /* Show on larger screens */
     .aside-right-overlay { 
-        /* display: flex;  */
-        display: none;
+        display: flex; 
+        /* display: none; */
     }
 }
 @media screen and (min-width: 0px) and (max-width: 919px) { 
     /* Toggle on smaller screens */
     .aside-right-overlay {
-        display: none;
-        /* display: flex; */
+        /* display: none; */
+        display: flex;
         flex-flow: row-reverse;
         width: 100%;
         background-color:rgba(0, 0, 0, 0.5);
