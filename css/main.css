@@ -169,6 +169,7 @@ button {
 }
 .user-drop-list:hover {
     background: #FAFBFC;
+    cursor: default
 }
 .user-drop-list i {
     margin: 0 10px;
