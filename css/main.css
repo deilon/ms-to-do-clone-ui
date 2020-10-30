@@ -759,6 +759,7 @@ main {
     border-top: 1px solid #edebe9;
     border-right: 1px solid #edebe9;
     border-bottom: 1px solid #edebe9;
+    border-left: none !important;
     border-radius: 0;
     position: absolute;
     top: 0;
