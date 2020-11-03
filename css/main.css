@@ -850,11 +850,11 @@ main {
 
 /**********************************
 ***********************************
-4. Modals
+4. Dialogs
 ***********************************
 **********************************/
-.modal {
-    /* display: none !important; */
+.dialog {
+    display: none !important;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -864,8 +864,8 @@ main {
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
 }
-.manage-accounts {
-    width: 320px;
+.dialog-content {
+    width: fit-content;
     background: #fff;
     margin: 15% auto;
     border-radius: 4px;
@@ -874,23 +874,28 @@ main {
     -moz-box-shadow: 1px 0px 7px 1px rgba(114, 78, 43, 0.41);
     box-shadow: 1px 0px 7px 1px rgba(121,119,117,0.41);
 }
-.modal-header {
+
+/* Manage Accounts */
+.manage-accounts {
+    width: 320px;
+}
+.manage-accounts-header {
     font-size: 16px;
     text-align: center;
     padding: 5px;
 }
-.manage-account {
+.manage-account-list {
     padding: 15px 15px;
 }
-.manage-account:hover {
+.manage-account-list:hover {
     cursor: default;
     background: #FAFBFC;
 }
-.manage-account div {
+.manage-account-list div {
     display: inline-block;
     box-sizing: border-box;
 }
-.manage-account .avatar {
+.manage-account-list .avatar {
     font-size: 11px;
     font-family: 'Segoe UI Regular';
     padding: 6px;
@@ -899,22 +904,22 @@ main {
     color: #FFF;
     margin-right: 20px;
 }
-.manage-account .account-details {
+.manage-account-list .account-details {
     vertical-align: middle;
 }
-.manage-account .account-details p {
+.manage-account-list .account-details p {
     margin: 0;
 }
-.manage-account .account-details .full-name {
+.manage-account-list .account-details .full-name {
     font-size: 14px;
     font-family: 'Segoe UI Regular';
 }
-.manage-account .account-details .email {
+.manage-account-list .account-details .email {
     font-size: 11px;
     font-family: 'Segoe UI Regular';
     color: gray;
 }
-.manage-account .account-details .email i {
+.manage-account-list .account-details .email i {
     font-size: 9px;
     font-weight: bold;
 }
@@ -970,3 +975,38 @@ main {
 .manage-account-footer button:hover {
     border: 1px solid #000;
 }
+
+/* Dialog Delete */
+.dialog-delete {
+    padding: 20px;
+}
+.dialog-delete p {
+    margin: 0 !important;
+}
+.dialog-delete-header {
+    font-size: 23px;
+    padding: 5px;
+}
+.dialog-delete-message {
+    font-size: 14px;
+    padding: 5px;
+}
+.dialog-delete-option {
+    text-align: right;
+    margin-top: 40px;
+}
+.dialog-delete-option button {
+    padding: 5px 40px;
+    font-size: 14px;
+    margin-left: 10px;
+    border-radius: 0;
+}
+.dialog-delete-option button:first-child {
+    background: #DC282B;
+    color: #FFF;
+}
+.dialog-delete-option button:last-child {
+    background: #EDEDED;
+    color: #000;
+}
+
