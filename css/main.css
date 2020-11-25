@@ -454,6 +454,16 @@ main {
 .sort-list:hover {
     background: #F5F6F7;
 }
+@media screen and (min-width: 0px) and (max-width: 775px) {
+    /* Few additions/adjustments in the main window */
+    .main-top {
+        padding-top: 25px !important;
+        padding-bottom: 10px !important;
+    }
+    .main-top-hb {
+        display: block !important;
+    }
+}
 
 
 /************ Main list ************/
@@ -590,16 +600,6 @@ main {
 }
 .task-title-form {
     font-size: 15px;
-}
-@media screen and (min-width: 0px) and (max-width: 775px) {
-    /* Few additions/adjustments in the main window */
-    .main-top {
-        padding-top: 25px !important;
-        padding-bottom: 10px !important;
-    }
-    .main-top-hb {
-        display: block !important;
-    }
 }
 
 
