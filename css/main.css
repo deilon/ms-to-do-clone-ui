@@ -208,6 +208,9 @@ button {
 .navs {
     padding: 10px 17px 10px 5px;
 }
+.navs:focus {
+    outline: 0 !important;
+}
 .navs:hover {
     background: #F4F5F5;
 }
